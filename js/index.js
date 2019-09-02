@@ -109,5 +109,5 @@ navText.forEach(a =>
   let nav = document.querySelector('nav');
 
   nav.appendChild(newNav);
-  // nav.prepend(newNavi);
+  nav.prepend(newNavi);
 
