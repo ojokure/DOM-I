@@ -40,3 +40,74 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let navBar = document.querySelectorAll("a");
+
+navBar[0].textContent = 'Services';
+navBar[1].textContent = 'Product';
+navBar[2].textContent = 'Vision';
+navBar[3].textContent = 'Features';
+navBar[4].textContent = 'About';
+navBar[5].textContent = 'Contact';
+
+let getStartedButton = document.querySelector("button");
+getStartedButton.innerText = 'Get Started';
+
+let snippetImage = document.getElementById("cta-img");
+snippetImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+let domIsAwesome = document.querySelector(".cta-text h1");
+
+domIsAwesome.innerText = "DOM\nIS\nAWESOME";
+
+
+let textHeader = document.querySelectorAll('.main-content .text-content h4');
+textHeader[0].textContent = siteContent['main-content']['features-h4'];
+textHeader[1].textContent = siteContent['main-content']['about-h4'];
+textHeader[2].textContent = siteContent['main-content']['services-h4'];
+textHeader[3].textContent = siteContent['main-content']['product-h4'];
+textHeader[4].textContent = siteContent['main-content']['vision-h4'];
+
+
+let mainText = document.querySelectorAll('.main-content .text-content p');
+mainText[0].innerText = siteContent['main-content']['features-content'];
+mainText[1].innerText = siteContent['main-content']['about-content'];
+mainText[2].innerText = siteContent['main-content']['services-content'];
+mainText[3].innerText = siteContent['main-content']['product-content'];
+mainText[4].innerText = siteContent['main-content']['vision-content'];
+
+let middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+let contact = document.querySelector('.contact h4');
+contact.textContent = siteContent['contact']['contact-h4'];
+
+let contactChild = document.querySelectorAll('.contact p');
+
+contactChild[0].innerText = siteContent['contact']['address'];
+contactChild[1].innerText = siteContent['contact']['phone'];
+contactChild[2].innerText = siteContent['contact']['email'];
+
+let footerText = document.querySelector('footer');
+footerText.innerText = siteContent['footer']['copyright'];
+
+let navText = document.querySelectorAll('a');
+
+navText.forEach(a =>
+  a.style.color = 'green');
+
+  let newNav = document.createElement('a');
+  newNav.textContent = ('Apps');
+  newNav.style.color = ('green');
+
+
+  let newNavi = document.createElement('a');
+  newNavi.textContent = ('Blog');
+  newNavi.style.color =  ('green');
+
+  let nav = document.querySelector('nav');
+
+  nav.appendChild(newNav);
+  nav.prepend(newNavi);
+
