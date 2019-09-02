@@ -111,3 +111,14 @@ navText.forEach(a =>
   nav.appendChild(newNav);
   nav.prepend(newNavi);
 
+  let buttonEffect = document.querySelector('button').addEventListener('click', onClick)
+  
+  function onClick(e){
+   return alert(`\n'Welcome Home, let's get Started'`); 
+  };
+  let hoverEffect = document.querySelector('button');
+  
+  hoverEffect.addEventListener('mousever', function (e){
+    return document.button.style.backgroundColor = 'green';
+   e.preventDefault();
+  });
