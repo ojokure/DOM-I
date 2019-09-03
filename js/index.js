@@ -118,7 +118,8 @@ navText.forEach(a =>
   };
   let hoverEffect = document.querySelector('button');
   
-  hoverEffect.addEventListener('mousever', function (e){
-    return document.button.style.backgroundColor = 'green';
-   e.preventDefault();
-  });
+  hoverEffect.addEventListener('mouseover',function(event){
+   event.target.style.backgroundColor = 'green'});
+  
+  
+
